@@ -1,7 +1,7 @@
 :root {
   --main-bg: #030011;
   --primary-text: #F1F1F1;
-  --accent-blue: #00BFFF;
+  --blue-violet: #6a2dcc;
   --secondary-accent: #202124;
   --hover-effect: #00FFC6;
   --glow-shadow: rgba(0, 191, 255, 0.2);
@@ -72,7 +72,7 @@ body {
 .logo {
   font-size: 1.8rem;
   font-weight: var(--font-weight-bold);
-  color: var(--accent-blue);
+  color: var(--blue-violet);
 }
 
 .header-logo-image {
@@ -101,7 +101,7 @@ body {
 }
 
 .header-join-btn {
-  background-color: var(--accent-blue);
+  background-color: var(--blue-violet);
   color: var(--primary-text);
   border: none;
   padding: 10px 20px;
@@ -122,11 +122,11 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 80px;
+  gap: 60px;
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 60px 0;
+  padding: 40px 0;
   box-sizing: border-box;
 }
 
@@ -141,6 +141,7 @@ body {
   font-size: var(--font-size-h1);
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height);
+  margin-top: -150px;
 }
 
 h2 {
@@ -154,7 +155,7 @@ h3 {
 }
 
 .hero-text-content span {
-  color: var(--accent-blue);
+  color: var(--blue-violet);
 }
 
 .hero-text-content p {
@@ -214,7 +215,7 @@ h3 {
 }
 
 .join-btn {
-  background-color: var(--accent-blue);
+  background-color: var(--blue-violet);
   color: var(--primary-text);
   box-shadow: 0 4px 10px var(--glow-shadow);
 }
@@ -226,14 +227,38 @@ h3 {
 
 .read-btn {
   background-color: transparent;
-  color: var(--accent-blue);
-  border: 2px solid var(--accent-blue);
+  color: var(--blue-violet);
+  border: 2px solid var(--blue-violet);
 }
 
 .read-btn:hover {
   background-color: rgba(0, 191, 255, 0.1);
   border-color: var(--hover-effect);
   transform: translateY(-2px);
+}
+
+.join-btn.hero-desktop-join-btn {
+    padding: 12px 25px;
+    font-size: var(--font-size-button);
+    font-weight: var(--font-weight-semibold);
+    background-color: var(--blue-violet);
+    color: var(--primary-text);
+    border: none;
+    border-radius: var(--border-radius);
+    display: block;
+    width: fit-content;
+    min-width: 200px;
+    align-self: flex-start;
+    margin-top: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px var(--glow-shadow);
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.join-btn.hero-desktop-join-btn:hover {
+    background-color: var(--hover-effect);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px var(--glow-shadow);
 }
 
 @media (max-width: 1200px) {
@@ -309,12 +334,9 @@ h3 {
     max-width: 250px;
   }
 
-  .activate-windows-text {
-    position: static;
-    text-align: center;
-    margin-top: 40px;
-    padding-right: 0;
-  }
+.join-btn.hero-desktop-join-btn{
+  display: none;
+}
 }
 
 @media (max-width: 600px) {

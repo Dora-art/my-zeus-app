@@ -13,6 +13,7 @@ function HeroSection() {
         <p>
           Zeus is your AI co-pilot for DevOps — instantly diagnose broken CI/CD pipelines, auto-generate infrastructure, trace cloud deployments, and orchestrate cross-cloud operations with a single CLI. No YAML. No guesswork. Just intelligent automation.
         </p>
+        <button class="join-btn hero-desktop-join-btn">Join Waitlist</button>
         <div className="hero-buttons-mobile">
           <button className="join-btn">Join Waitlist</button>
           <button className="read-btn">Read Docs</button>

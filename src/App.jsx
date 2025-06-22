@@ -17,10 +17,6 @@ function App() {
       </header>
 
       <HeroSection />
-
-      <div className="activate-windows-text">
-        <p>Activate Windows<br />Go to Settings to activate Windows.</p>
-      </div>
     </div>
   );
 }
